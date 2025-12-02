@@ -1,4 +1,4 @@
-# Machine Learning Projects
+# Machines: Learnt
 
 A collection of applied machine learning projects spanning medical diagnostics, environmental forecasting, and agricultural analysis. Each project demonstrates practical implementations of supervised learning techniques addressing real-world classification and prediction challenges.
 
