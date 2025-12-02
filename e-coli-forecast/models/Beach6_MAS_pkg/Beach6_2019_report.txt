@@ -1,0 +1,95 @@
+MLR Model Building Report
+
+
+Independent Variable: ECOLI_LOG10
+Number of observations: 463
+
+Models are listed in order of best-fit based upon selected evaluation criterion.
+Model Evaluation Criterion: AdjustedR2
+
+
+***********************************************************************************************************
+Model: ECOLI_LOG10 = -10.1271e-01 + 68.3547e-02*LOG10[TURB_NTRU] + 79.3788e-04*RHUM_PCT + 52.5621e-03*WTEMP_CEL + 18.1216e-04*BIRDS_NO + 31.7581e-02*CHANGELL_FT + 24.813e-03*AirportWindSpInst_mph + 19.7976e-02*SQUAREROOT[AirportRain48W_in]
+
+Model Evaluation Score: 4.747e-01
+
+All Evaluation Metrics: 
+	R Squared: 		4.7697e-01
+	Adjusted R Squared: 	4.747e-01
+	Akaike Info Criterion: 	-2.0085e02
+	Corrected AIC: 		-2.0085e02
+	Bayesian Info Criterion: 	-6.3689e02
+	PRESS: 		1.103e02
+	RMSE: 			4.841e-01
+	Sensitivity: 		2.5581e-01
+	Specificity: 		9.7381e-01
+	Accuracy: 		9.0713e-01
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: (Intercept)
+Coefficient	Standard Error	t-Statistic	P-Value
+-1.0127e00	 2.118e-01	 -4.7814e00	 2.3541e-06
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: LOG10[TURB_NTRU]
+Coefficient	Standard Error	t-Statistic	P-Value
+6.8355e-01	 5.3469e-02	 1.2784e01	 0.000e00
+
+Descriptive Statistics for LOG10[TURB_NTRU]: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.2034e00	 0.000e00	 2.2034e00	 7.6374e-01	 3.5361e02	 8
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: RHUM_PCT
+Coefficient	Standard Error	t-Statistic	P-Value
+7.9379e-03	 1.9714e-03	 4.0265e00	 6.6311e-05
+
+Descriptive Statistics for RHUM_PCT: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.190e02	 4.200e01	 1.770e02	 7.2644e01	 3.3634e04	 0
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: WTEMP_CEL
+Coefficient	Standard Error	t-Statistic	P-Value
+5.2562e-02	 7.3923e-03	 7.1103e00	 4.5126e-12
+
+Descriptive Statistics for WTEMP_CEL: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.978e01	 9.220e00	 2.056e01	 2.142e01	 9.9174e03	 0
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: BIRDS_NO
+Coefficient	Standard Error	t-Statistic	P-Value
+1.8122e-03	 7.3269e-04	 2.4733e00	 1.3752e-02
+
+Descriptive Statistics for BIRDS_NO: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.000e02	 0.000e00	 2.000e02	 2.4488e01	 1.1338e04	 156
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: CHANGELL_FT
+Coefficient	Standard Error	t-Statistic	P-Value
+3.1758e-01	 1.024e-01	 3.1014e00	 2.046e-03
+
+Descriptive Statistics for CHANGELL_FT: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+7.910e-01	 -1.040e00	 1.831e00	 -7.1728e-03	 -3.321e00	 15
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: AirportWindSpInst_mph
+Coefficient	Standard Error	t-Statistic	P-Value
+2.4813e-02	 5.9227e-03	 4.1894e00	 3.3599e-05
+
+Descriptive Statistics for AirportWindSpInst_mph: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.200e01	 0.000e00	 2.200e01	 7.378e00	 3.416e03	 50
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: SQUAREROOT[AirportRain48W_in]
+Coefficient	Standard Error	t-Statistic	P-Value
+1.9798e-01	 5.7003e-02	 3.4731e00	 5.6365e-04
+
+Descriptive Statistics for SQUAREROOT[AirportRain48W_in]: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+3.2802e00	 0.000e00	 3.2802e00	 3.6442e-01	 1.6873e02	 172
+

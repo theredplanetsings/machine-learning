@@ -1,0 +1,77 @@
+MLR Model Building Report
+
+
+Independent Variable: LOG10[EcoliAve_CFU]
+Number of observations: 1011
+
+Models are listed in order of best-fit based upon selected evaluation criterion.
+Model Evaluation Criterion: AICC
+
+
+***********************************************************************************************************
+Model: LOG10[EcoliAve_CFU] = -34.6615e-03 + 35.9571e-03*Lake_Temp_C + 68.9557e-02*LOG10[Lake_Turb_NTRU] + 19.4169e-02*SQUAREROOT[WaveHt_Ft] + 37.8094e-02*LL_PreDay + 45.3704e-02*SQUAREROOT[AirportRain48W_in]
+
+Model Evaluation Score: -6.2885e02
+
+All Evaluation Metrics: 
+	R Squared: 		5.4985e-01
+	Adjusted R Squared: 	5.4896e-01
+	Akaike Info Criterion: 	-6.2885e02
+	Corrected AIC: 		-6.2885e02
+	Bayesian Info Criterion: 	-1.6173e03
+	PRESS: 		1.9987e02
+	RMSE: 			4.431e-01
+	Sensitivity: 		4.3011e-01
+	Specificity: 		9.5747e-01
+	Accuracy: 		8.6026e-01
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: (Intercept)
+Coefficient	Standard Error	t-Statistic	P-Value
+-3.4662e-02	 1.1378e-01	 -3.0463e-01	 7.6071e-01
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: Lake_Temp_C
+Coefficient	Standard Error	t-Statistic	P-Value
+3.5957e-02	 4.5394e-03	 7.9212e00	 6.2172e-15
+
+Descriptive Statistics for Lake_Temp_C: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.810e01	 1.110e01	 1.700e01	 2.1814e01	 2.2054e04	 0
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: LOG10[Lake_Turb_NTRU]
+Coefficient	Standard Error	t-Statistic	P-Value
+6.8956e-01	 4.6841e-02	 1.4721e01	 0.000e00
+
+Descriptive Statistics for LOG10[Lake_Turb_NTRU]: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.7802e00	 7.9181e-02	 2.701e00	 9.8335e-01	 9.9417e02	 0
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: SQUAREROOT[WaveHt_Ft]
+Coefficient	Standard Error	t-Statistic	P-Value
+1.9417e-01	 4.014e-02	 4.8373e00	 1.5224e-06
+
+Descriptive Statistics for SQUAREROOT[WaveHt_Ft]: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.2361e00	 0.000e00	 2.2361e00	 6.5024e-01	 6.5739e02	 167
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: LL_PreDay
+Coefficient	Standard Error	t-Statistic	P-Value
+3.7809e-01	 8.867e-02	 4.264e00	 2.1968e-05
+
+Descriptive Statistics for LL_PreDay: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+8.570e-01	 -5.840e-01	 1.441e00	 -1.4491e-03	 -1.465e00	 23
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Parameter Name: SQUAREROOT[AirportRain48W_in]
+Coefficient	Standard Error	t-Statistic	P-Value
+4.537e-01	 2.9569e-02	 1.5344e01	 0.000e00
+
+Descriptive Statistics for SQUAREROOT[AirportRain48W_in]: 
+Maximum	Minimum	DataRange	MeanValue	Sum		ZeroCount
+2.8965e00	 0.000e00	 2.8965e00	 3.905e-01	 3.948e02	 444
+
