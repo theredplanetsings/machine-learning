@@ -74,6 +74,35 @@ Computer vision analysis of the Agriculture Vision 2021 dataset to detect and cl
 
 ---
 
+### Anomaly Detection in Spacecraft Telemetry Data
+
+**Location:** `nasa-telemetry-anomaly-detection/`
+
+Unsupervised ensemble learning system for detecting anomalies in multivariate spacecraft telemetry data from NASA's Soil Moisture Active Passive (SMAP) satellite. The project combines three anomaly detection algorithms through majority voting to identify operational irregularities across nine telemetry channels.
+
+**Dataset:**
+- 9 anonymised telemetry channels representing spacecraft subsystems
+- 25 multivariate sensor readings per channel
+- 55 manually labelled anomaly sequences
+- Temporal time series data (1-minute aggregation intervals)
+
+**Anomaly Types:**
+- Point anomalies (62%): Single-timestamp deviations
+- Contextual anomalies (38%): Pattern-based irregularities
+
+**Technical Approach:**
+- Feature extraction via MiniRocketMultivariate (20,000 random convolutional kernels)
+- 60-timestamp sliding windows with 20-timestamp overlap for temporal context
+- Ensemble model combining One-Class SVM, Isolation Forest, and Local Outlier Factor
+- Percentile-based threshold optimisation prioritising recall over precision
+- Channel-specific threshold calibration
+
+**Performance:** Average recall of 0.55 across all channels, with 2/10 channels achieving >0.7 recall. Best-performing channel (D) achieves F1 score of 0.39 with 0.61 recall.
+
+**Documentation:** Full methodology and analysis in `nasa-telemetry-anomaly-detection/paper/Writeup.pdf`
+
+---
+
 ## Technologies
 
 **Core Libraries:**
@@ -85,12 +114,16 @@ Computer vision analysis of the Agriculture Vision 2021 dataset to detect and cl
 
 **Techniques Demonstrated:**
 - Supervised classification (multi-class, binary)
+- Unsupervised anomaly detection
 - Regression analysis
-- Ensemble methods (Random Forest, Gradient Boosting)
-- Support Vector Machines
+- Ensemble methods (Random Forest, Gradient Boosting, Majority Voting)
+- Support Vector Machines (classification, one-class)
+- Isolation Forest
+- Local Outlier Factor
 - Hyperparameter optimisation
 - Class imbalance handling
-- Feature engineering and transformation
+- Time series feature engineering
+- Sliding window analysis
 - Model validation and comparison
 
 ## Repository Structure
@@ -108,6 +141,12 @@ machine-learning/
 │   └── README.md
 ├── id-farmland-characteristics/
 │   ├── src/              # Analysis notebooks
+│   ├── paper/            # Research documentation
+│   └── README.md
+├── nasa-telemetry-anomaly-detection/
+│   ├── model_two.ipynb   # Ensemble model implementation
+│   ├── train/            # Training data
+│   ├── test/             # Testing data
 │   ├── paper/            # Research documentation
 │   └── README.md
 └── README.md
