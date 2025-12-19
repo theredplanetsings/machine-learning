@@ -163,7 +163,7 @@ Each project directory contains its own README with specific setup instructions,
 
 ## Data Access
 
-External datasets are required for each project and are not included in this repository. Download links and instructions are provided in the respective project README files.
+External datasets are required for each project and are not included in this repository (except for the nasa-telemtry anomaly detection data). Download links and instructions are provided in the respective project README files.
 
 ## Licence
 
