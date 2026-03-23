@@ -144,10 +144,12 @@ machine-learning/
 │   ├── paper/            # Research documentation
 │   └── README.md
 ├── nasa-telemetry-anomaly-detection/
-│   ├── model_two.ipynb   # Ensemble model implementation
-│   ├── train/            # Training data
-│   ├── test/             # Testing data
+│   ├── artifacts/        # Saved model artifacts
+│   ├── data/             # Raw telemetry data
 │   ├── paper/            # Research documentation
+│   ├── results/          # Metrics and figures
+│   ├── src/              # Source code
+│   ├── requirements.txt  # Python dependencies
 │   └── README.md
 └── README.md
 ```
